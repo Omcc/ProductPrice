@@ -43,7 +43,7 @@ class CollectionObserver implements ObserverInterface
         if (!$this->helper->isAvailablePrice()) {
             $collection = $observer->getEvent()->getCollection();
             foreach ($collection as $product) {
-                $product->setCanShowPrice(false);
+
             }
         }
     }

@@ -42,7 +42,7 @@ class SalableObserver implements ObserverInterface
     {
         if (!$this->helper->isAvailableAddToCart()) {
             $salable = $observer->getEvent()->getSalable();
-            $salable->setIsSalable(false);
+
         }
     }
 }

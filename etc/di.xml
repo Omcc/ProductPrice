@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <preference for="Magento\Catalog\Pricing\Render\FinalPriceBox"
+                type="Faonni\ProductAvailable\Plugin\Pricing\Render\FinalPriceBox" />
+    <preference for="Magento\ConfigurableProduct\Pricing\Render\FinalPriceBox"
+                type="Faonni\ProductAvailable\Plugin\Pricing\Render\FinalPriceBox" />
+    <type name="Magento\Catalog\Model\Product">
+        <plugin name="hidecartbutton" type="Faonni\ProductAvailable\Plugin\Hidecartbutton" sortOrder="32"/>
+    </type>
+</config>

@@ -42,7 +42,7 @@ class ProductObserver implements ObserverInterface
     {
         if (!$this->helper->isAvailablePrice()) {
             $product = $observer->getEvent()->getProduct();
-            $product->setCanShowPrice(false);
+
         }
     }
 }
